@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="formulario.css">
+
+</head>
+<body>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <label for="data">Data Atual: </label>
+        <input id="data" type="date" name="data">
+
+        <h2>Dados de Acesso</h2>
+        <label for="usuario">Usuário: </label>
+        <input type="text" id="usuario" name="usuario" required autofocus placeholder="Insira seu Usuario"><br><br>
+        <label for="password">Senha: </label>
+        <input type="password" id="password" name="password" required placeholder="Insira sua Senha"><br><br>
+
+        <h2>Dados Pessoais</h2>
+
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" required autofocus placeholder="Insira seu Nome"><br><br>
+
+        <label for="endereco">Endereço: </label>
+        <input type="text" id="endereco" name="endereco" required autofocus placeholder="Insira seu Endereço"><br><br>
+
+        <label for="numero">Número: </label>
+        <input type="text" id="numero" name="numero" required autofocus placeholder="Insira o Número"><br><br>
+
+        <label for="complemento">Complemento: </label>
+        <input type="text" id="complemento" name="complemento" placeholder="Insira um Complemento"><br><br>
+
+        <label for="cidade">Cidade: </label>
+        <input list="cidades" id="cidade" name="cidade" required placeholder="Insira sua Cidade"><br><br>
+        <datalist id="cidades">
+            <option value="Sorocaba"></option>
+            <option value="Pirapora do Bom Jesus"></option>
+            <option value="São Paulo"></option>
+            <option value="Ribeirão Preto"></option>
+            <option value="São Roque"></option>
+        </datalist>
+        
+        <label for="estado">Estado: </label>
+        <select name="estado" id="estado" required>
+            <option value="null">----------</option>
+            <option value="SP">SP</option>
+            <option value="MG">MG</option>
+            <option value="RJ">RJ</option>
+            <option value="SC">SC</option>
+            <option value="RS">RS</option>
+        </select> <br><br>
+
+        <label for="cep">CEP: </label>
+        <input type="text" id="cep" name="cep" required placeholder="Insira seu CEP"><br><br>
+
+        <h2>Gênero</h2>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="Feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="nao_falar" name="genero" value="Prefiro não falar">
+        <label for="nao_falar">Prefiro não falar</label><br><br>
+
+        <h2>Curso</h2>
+        <input type="checkbox" id="ads" name="curso" value="ADS">
+        <label for="ads">ADS</label><br>
+        <input type="checkbox" id="jogos" name="curso" value="Jogos">
+        <label for="jogos">Jogos</label><br>
+        <input type="checkbox" id="gestaoti" name="curso" value="Gestão de TI">
+        <label for="gestaoti">Gestão de TI</label><br>
+        <input type="checkbox" id="bancodedados" name="curso" value="Banco de Dados">
+        <label for="bancodedados">Banco de Dados</label><br><br>
+
+        <h2>Modalidade</h2>
+        <input type="radio" id="presencial" name="modelo" value="Presencial">
+        <label for="presencial">Presencial</label><br>
+        <input type="radio" id="ead" name="modelo" value="EAD">
+        <label for="ead">EAD</label><br>
+        <input type="radio" id="semi_presencial" name="modelo" value="Semi Presencial">
+        <label for="semi_presencial">Semi Presencial</label><br><br>
+
+        <input class="submit" type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
